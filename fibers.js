@@ -7,6 +7,7 @@ var fibersVersion = pkg.dependencies.fibers;
 
 if (global.___sharedFibers_sharedFiber == null) {
   global.___sharedFibers_sharedFiber = require('fibers');
+  global.___sharedFibers_sharedFuture = require('fibers/future');
   global.___sharedFibers_fibersVersion = fibersVersion;
 } else {
   if (global.___sharedFibers_fibersVersion != fibersVersion) {
